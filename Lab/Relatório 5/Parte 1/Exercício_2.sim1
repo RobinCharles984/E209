@@ -1,0 +1,73 @@
+<circuit version="" rev="2220" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="MCU" CircId="mega328-1" mainComp="false" Show_id="true" Show_Val="false" Pos="-144,-72" rotation="0" hflip="1" vflip="1" label="mega328-1" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="16 MHz" Program="Exercicio_2/build/arduino.avr.uno/Exercicio_2.ino.hex" Auto_Load="false" saveEepr="true" Logic_Symbol="false" Rst_enabled="false" Ext_Osc="false" Wdt_enabled="false" Clk_Out="false" SerialMon="-1" />
+
+<item itemtype="Push" CircId="Push-3" mainComp="false" Show_id="true" Show_Val="false" Pos="-312,-80" rotation="0" hflip="1" vflip="1" label="BOTÃO A" idLabPos="-18.6117,-24.4353" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" Poles="1" />
+
+<item itemtype="Push" CircId="Push-4" mainComp="false" Show_id="true" Show_Val="false" Pos="-312,-24" rotation="0" hflip="1" vflip="1" label="BOTÃO B" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" Poles="1" />
+
+<item itemtype="Push" CircId="Push-5" mainComp="false" Show_id="true" Show_Val="false" Pos="-312,32" rotation="0" hflip="1" vflip="1" label="BOTÃO C" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" Poles="1" />
+
+<item itemtype="Ground" CircId="Ground-8" mainComp="false" Show_id="false" Show_Val="false" Pos="80,100" rotation="0" hflip="1" vflip="1" label="Ground-8" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="DcMotor" CircId="DcMotor-9" mainComp="false" Show_id="true" Show_Val="false" Pos="16,-16" rotation="0" hflip="1" vflip="1" label="MOTOR 2" idLabPos="-22,-48" labelrot="0" valLabPos="-14,36" valLabRot="0" RPM_Nominal="60 _RPM" Volt_Nominal="5 V" Resistance="100 Ω" />
+
+<item itemtype="DcMotor" CircId="DcMotor-10" mainComp="false" Show_id="true" Show_Val="false" Pos="16,72" rotation="0" hflip="1" vflip="1" label="MOTOR 3" idLabPos="-22,-48" labelrot="0" valLabPos="-14,36" valLabRot="0" RPM_Nominal="60 _RPM" Volt_Nominal="5 V" Resistance="100 Ω" />
+
+<item itemtype="DcMotor" CircId="DcMotor-11" mainComp="false" Show_id="true" Show_Val="false" Pos="16,-104" rotation="0" hflip="1" vflip="1" label="MOTOR 1" idLabPos="-22,-48" labelrot="0" valLabPos="-14,36" valLabRot="0" RPM_Nominal="60 _RPM" Volt_Nominal="5 V" Resistance="100 Ω" />
+
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-22" mainComp="false" Show_id="false" Show_Val="false" Pos="-424,-80" rotation="0" hflip="1" vflip="1" label="Fixed Voltage-22" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Voltage="5 V" Out="false" />
+
+<item itemtype="Resistor" CircId="Resistor-25" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-48,-104" rotation="0" hflip="1" vflip="1" label="Resistor-25" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="100 Ω" />
+
+<item itemtype="Resistor" CircId="Resistor-27" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-48,-16" rotation="0" hflip="1" vflip="1" label="Resistor-27" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="100 Ω" />
+
+<item itemtype="Resistor" CircId="Resistor-28" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-48,72" rotation="0" hflip="1" vflip="1" label="Resistor-28" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="100 Ω" />
+
+<item itemtype="Node" CircId="Node-16" mainComp="false" Pos="80,-16" />
+
+<item itemtype="Node" CircId="Node-17" mainComp="false" Pos="80,72" />
+
+<item itemtype="Node" CircId="Node-24" mainComp="false" Pos="-340,-24" />
+
+<item itemtype="Node" CircId="Node-23" mainComp="false" Pos="-340,-80" />
+
+<item itemtype="Connector" uid="Connector-18" startpinid="DcMotor-9-rPin" endpinid="Node-16-1" pointList="56,-16,80,-16" />
+
+<item itemtype="Connector" uid="Connector-20" startpinid="Node-16-2" endpinid="DcMotor-11-rPin" pointList="80,-16,80,-104,56,-104" />
+
+<item itemtype="Connector" uid="Connector-21" startpinid="DcMotor-10-rPin" endpinid="Node-17-1" pointList="56,72,80,72" />
+
+<item itemtype="Connector" uid="Connector-22" startpinid="Ground-8-Gnd" endpinid="Node-17-0" pointList="80,84,80,72" />
+
+<item itemtype="Connector" uid="Connector-23" startpinid="Node-17-2" endpinid="Node-16-0" pointList="80,72,80,-16" />
+
+<item itemtype="Connector" uid="Connector-28" startpinid="Push-4-switch0pinN" endpinid="mega328-1-PORTD1" pointList="-296,-24,-224,-24,-224,-48,-152,-48" />
+
+<item itemtype="Connector" uid="Connector-29" startpinid="Push-5-switch0pinN" endpinid="mega328-1-PORTD2" pointList="-296,32,-216,32,-216,-40,-152,-40" />
+
+<item itemtype="Connector" uid="Connector-52" startpinid="Resistor-25-rPin" endpinid="DcMotor-11-lPin" pointList="-32,-104,-24,-104" />
+
+<item itemtype="Connector" uid="Connector-53" startpinid="Resistor-25-lPin" endpinid="mega328-1-PORTB3" pointList="-64,-104,-64,-28,-88,-28,-88,24,-104,24" />
+
+<item itemtype="Connector" uid="Connector-54" startpinid="DcMotor-9-lPin" endpinid="Resistor-27-rPin" pointList="-24,-16,-32,-16" />
+
+<item itemtype="Connector" uid="Connector-55" startpinid="Resistor-27-lPin" endpinid="mega328-1-PORTB2" pointList="-64,-16,-76,-16,-76,32,-104,32" />
+
+<item itemtype="Connector" uid="Connector-56" startpinid="DcMotor-10-lPin" endpinid="Resistor-28-rPin" pointList="-24,72,-32,72" />
+
+<item itemtype="Connector" uid="Connector-57" startpinid="Resistor-28-lPin" endpinid="mega328-1-PORTB1" pointList="-64,72,-76,72,-76,40,-104,40" />
+
+<item itemtype="Connector" uid="Connector-27" startpinid="Push-3-switch0pinN" endpinid="mega328-1-PORTD0" pointList="-296,-80,-296,-76,-224,-76,-224,-56,-152,-56" />
+
+<item itemtype="Connector" uid="Connector-47" startpinid="Node-24-2" endpinid="Node-23-1" pointList="-340,-24,-340,-80" />
+
+<item itemtype="Connector" uid="Connector-46" startpinid="Push-4-pinP0" endpinid="Node-24-0" pointList="-328,-24,-340,-24" />
+
+<item itemtype="Connector" uid="Connector-45" startpinid="Push-5-pinP0" endpinid="Node-24-1" pointList="-328,32,-340,32,-340,-24" />
+
+<item itemtype="Connector" uid="Connector-44" startpinid="Node-23-2" endpinid="Push-3-pinP0" pointList="-340,-80,-328,-80" />
+
+<item itemtype="Connector" uid="Connector-43" startpinid="Fixed Voltage-22-outnod" endpinid="Node-23-0" pointList="-408,-80,-340,-80" />
+
+</circuit>
