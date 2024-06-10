@@ -56,7 +56,15 @@ ISR(TIMER0_COMPA_vect){
       //Troca pro Vermelho ligado e zera o contador
       if(countCtc==4000){
         PORTB ^= LED_AMARELO;
-        countCtc=0;
+        countCtc = 0;
+      }
+    }
+
+    //Pisca LED amarelo caso desligue o semáforo
+    else{
+      if(countCtc==300){
+        PORTB ^= LED_AMARELO;
+        countCtc = 0;
       }
     }
 }
@@ -65,11 +73,12 @@ ISR(TIMER0_COMPA_vect){
 ISR(INT0_vect){
   countInt++;
   countCtc = 0;
+  PORTB &= LED_VERDE & LED_AMARELO & LED_VERMELHO;
   if(countInt % 2 == 0){
     ligado = true;
   }
   else{
-    PORTB &= LED_VERDE & LED_AMARELO & LED_VERMELHO;//Será substituído por OCXX quando terminar o PWM
+    PORTB &= LED_VERDE & LED_VERMELHO;//Será substituído por OCXX quando terminar o PWM
     ligado = false;
   }
 }
