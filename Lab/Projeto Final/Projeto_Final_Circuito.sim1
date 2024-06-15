@@ -16,11 +16,15 @@
 
 <item itemtype="Push" CircId="Push-9" mainComp="false" Show_id="false" Show_Val="false" Pos="-464,44" rotation="0" hflip="1" vflip="1" label="Push-9" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" Poles="1" />
 
-<item itemtype="Potentiometer" CircId="Potentiometer-10" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-200,-12" rotation="0" hflip="1" vflip="1" label="Potentiometer-10" idLabPos="-16,-40" labelrot="0" valLabPos="15,-20" valLabRot="0" Resistance="1000 Ω" Value_Ohm="29 Ω" Slider="false" Scale="1" />
+<item itemtype="Potentiometer" CircId="Potentiometer-10" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-268,8" rotation="0" hflip="1" vflip="1" label="Potentiometer-10" idLabPos="-16,-40" labelrot="0" valLabPos="15,-20" valLabRot="0" Resistance="1000 Ω" Value_Ohm="859 Ω" Slider="false" Scale="1" />
 
 <item itemtype="Ground" CircId="Ground-11" mainComp="false" Show_id="false" Show_Val="false" Pos="-220,180" rotation="0" hflip="1" vflip="1" label="Ground-11" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
 
 <item itemtype="Ground" CircId="Ground-14" mainComp="false" Show_id="false" Show_Val="false" Pos="-504,76" rotation="0" hflip="1" vflip="1" label="Ground-14" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Ground" CircId="Ground-15" mainComp="false" Show_id="false" Show_Val="false" Pos="-300,28" rotation="0" hflip="1" vflip="1" label="Ground-15" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-16" mainComp="false" Show_id="false" Show_Val="false" Pos="-192,8" rotation="0" hflip="-1" vflip="1" label="Fixed Voltage-16" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Voltage="5 V" Out="true" />
 
 <item itemtype="Node" CircId="Node-12" mainComp="false" Pos="-220,128" />
 
@@ -38,18 +42,24 @@
 
 <item itemtype="Connector" uid="Connector-17" startpinid="Push-9-switch0pinN" endpinid="mega328-1-PORTD2" pointList="-448,44,-396,44" />
 
-<item itemtype="Connector" uid="Connector-12" startpinid="Node-12-2" endpinid="Ground-11-Gnd" pointList="-220,128,-220,164" />
-
-<item itemtype="Connector" uid="Connector-11" startpinid="Led-5-rPin" endpinid="Node-12-0" pointList="-248,128,-220,128" />
-
-<item itemtype="Connector" uid="Connector-15" startpinid="Node-13-2" endpinid="Node-12-1" pointList="-220,104,-220,128" />
-
-<item itemtype="Connector" uid="Connector-14" startpinid="Led-2-rPin" endpinid="Node-13-0" pointList="-248,104,-220,104" />
-
-<item itemtype="Connector" uid="Connector-13" startpinid="Led-4-rPin" endpinid="Node-13-1" pointList="-248,80,-220,80,-220,104" />
-
 <item itemtype="Connector" uid="Connector-2" startpinid="Resistor-7-rPin" endpinid="Led-4-lPin" pointList="-288,80,-280,80" />
 
 <item itemtype="Connector" uid="Connector-8" startpinid="Resistor-7-lPin" endpinid="mega328-1-PORTB3" pointList="-320,80,-332,80,-332,108,-348,108" />
+
+<item itemtype="Connector" uid="Connector-11" startpinid="Led-5-rPin" endpinid="Node-12-0" pointList="-248,128,-220,128" />
+
+<item itemtype="Connector" uid="Connector-12" startpinid="Node-12-2" endpinid="Ground-11-Gnd" pointList="-220,128,-220,164" />
+
+<item itemtype="Connector" uid="Connector-13" startpinid="Led-4-rPin" endpinid="Node-13-1" pointList="-248,80,-220,80,-220,104" />
+
+<item itemtype="Connector" uid="Connector-14" startpinid="Led-2-rPin" endpinid="Node-13-0" pointList="-248,104,-220,104" />
+
+<item itemtype="Connector" uid="Connector-15" startpinid="Node-13-2" endpinid="Node-12-1" pointList="-220,104,-220,128" />
+
+<item itemtype="Connector" uid="Connector-20" startpinid="Fixed Voltage-16-outnod" endpinid="Potentiometer-10-PinB" pointList="-208,8,-252,8" />
+
+<item itemtype="Connector" uid="Connector-21" startpinid="Potentiometer-10-PinA" endpinid="Ground-15-Gnd" pointList="-284,8,-300,8,-300,12" />
+
+<item itemtype="Connector" uid="Connector-22" startpinid="Potentiometer-10-PinM" endpinid="mega328-1-PORTC2" pointList="-268,24,-268,44,-348,44" />
 
 </circuit>
